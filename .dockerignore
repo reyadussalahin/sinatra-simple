@@ -1,0 +1,8 @@
+# ignoring .bundle
+.bundle/
+
+# ignoring .rerun
+.rerun
+
+# ignoring .gitignore
+.gitignore
