@@ -39,11 +39,10 @@ $ rackup -s puma -o 0.0.0.0 -p 8000
 ```
 
 ## Docker based development and deployment
-Before following the steps below, you must perform the two steps from getting started section:
- - [Create development environment](#create-development-environment)
+Before following the steps below, you must perform the step from getting started section:
  - [Get sinatra-simple](#get-sinatra-simple)
-
-after performing these two steps:
+ 
+ After performing `Get sinatra-simple`, you may do as follows:
 
 ### Prerequisites
 I assume that, you've docker installed in your machine.
@@ -81,7 +80,7 @@ $ docker run --name=<app-container-production> -p <host>:<port>:80 <app-image-ne
 
 Voila! you're done deploying your first sinatra app in production using docker conatiner!
 
-[Note: I would advice not to use `puma` or `webrick` as your front server, rather you should use `nginx` as a proxy in front of these servers, and then server request using `puma` or `webrick`]
+[Caution: I would advice not to use `puma` or `webrick` as your front server, rather you should use `nginx` as a proxy in front of these servers.]
 
 ## LICENSE
 To learn about the project license, visit [here](https://github.com/reyadussalahin/sinatra-simple/blob/master/LICENSE).
